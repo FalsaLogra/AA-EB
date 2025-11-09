@@ -122,12 +122,22 @@ body, html {
     text-align: justify;
 }
 
+#story p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
 .photoInline {
     width: 100%;
 }
 
 @media only screen and (max-width: 50rem) {
     #schedule p {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #story p {
         font-size: 2rem;
         text-align: left;
     }
@@ -140,8 +150,8 @@ body, html {
     gap: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     margin-bottom: 10%;
 }
 
