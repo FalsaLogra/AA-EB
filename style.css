@@ -44,6 +44,10 @@ body, html {
     gap: 1rem;
 }
 
+#welcome h1 {
+    text-align: center;
+}
+
 #welcome video {
     height: 50%;
     width: 100%;
@@ -54,6 +58,7 @@ body, html {
 
 #introduction {
     /* margin: 5%; */
+    margin-bottom: 10%;
     gap: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +71,7 @@ body, html {
     /* color: rgb(255, 155, 255); */
     font-size: 5rem;
     /* background-color: aqua; */
-    margin-left: 25%;
+    margin-left: 15%;
 }
 
 #introTitleDiv {
@@ -98,4 +103,71 @@ body, html {
 
 .photo h2 {
     text-align: center;
+}
+
+#schedule {
+    margin-left: 20%;
+    margin-right: 20%;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    /* background-color: blanchedalmond; */
+}
+
+#schedule p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.photoInline {
+    width: 100%;
+}
+
+@media only screen and (max-width: 50rem) {
+    #schedule p {
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+}
+
+#story {
+    margin-left: 20%;
+    margin-right: 20%;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+#story p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+#footer {
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0); */
+    /* color: rgb(255, 255, 255); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* margin: auto; */
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 10%;
+}
+
+video {
+    width: 100%;
+    height: auto;
 }
