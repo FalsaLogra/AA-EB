@@ -145,6 +145,26 @@ body, html {
     margin-bottom: 10%;
 }
 
+#gallery {
+    margin-left: 20%;
+    margin-right: 20%;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    /* background-color: blanchedalmond; */
+}
+
+#gallery h1 {
+    font-size: 5rem;
+}
+
+.galleryPhoto {
+    width: 100%;
+}
+
 #story p {
     font-size: 2rem;
     text-align: justify;
