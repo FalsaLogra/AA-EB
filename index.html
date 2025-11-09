@@ -1,18 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>AA - EB</title>
         <link rel="stylesheet" href="./style.css" />
     </head>
+
     <body>
-        <h1>AA - EB</h1>
+        <div id="overlay" onClick="overlayOff()">
+            <div id="overlayText">Click Me!</div>
+        </div>
+
+        <h1>AA - EBB</h1>
         <p>Just testing!</p>
+
+        <!-- <button id="startbtn">Start</button>
+        <div id="loader" style="display: none;">
+            <p>Loading ...</p>
+        </div> -->
+        <audio id="music" src="https://falsalogra.github.io/AA-EB/bgsong.mp3" style="display: none;" loop></audio>
     </body>
+
     <script>
-        var audio = new Audio('https://falsalogra.github.io/AA-EB/bgsong.mp3?raw=true');
-        audio.play();
+        // Source - https://stackoverflow.com/a
+        // Posted by grorp, modified by community. See post 'Timeline' for change history
+        // Retrieved 2025-11-09, License - CC BY-SA 4.0
+
+        const startbtn = document.getElementById("startbtn");
+        const content = document.getElementById("content");
+        const loader = document.getElementById("loader");
+        const music = document.getElementById("music");
+
+        //Add an event listner to the start button
+        overlay.addEventListener("click", () => {
+            //Show the loader and hide the button
+            //loader.style.display = "";
+            //startbtn.style.display = "none";
+            //Wait for the music to start
+            music.play();
+            // music.play().then(() => {
+            //     //Hide the loader and show the content
+            //     content.style.display = "";
+            //     loader.style.display = "none";
+            // });
+        });
+
+        function overlayOn() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function overlayOff() {
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        overlayOn();
     </script>
+
 </html>
 </html>
