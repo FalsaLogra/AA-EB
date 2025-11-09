@@ -103,6 +103,7 @@ h1, h2 {
     justify-content: center;
     align-items: center;
     /* background-color: aqua; */
+    gap: 2rem;
 }
 
 .photo {
@@ -110,10 +111,13 @@ h1, h2 {
     width: 20rem;
     /* background-color: rgb(255, 212, 212); */
     object-fit: contain;
+    margin: 0;
 }
 
-.photo h2 {
+.introPhotoText {
     text-align: center;
+    font-size: 3rem;
+    vertical-align: top;
 }
 
 #schedule {
@@ -138,19 +142,25 @@ h1, h2 {
     text-align: justify;
 }
 
+#story h2 {
+    font-size: 3rem;
+}
+
 .photoInline {
     width: 100%;
 }
 
 @media only screen and (max-width: 50rem) {
     #schedule p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: left;
+        line-height: 3rem;
     }
 
     #story p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: left;
+        line-height: 3rem;
     }
     
 }
@@ -184,11 +194,6 @@ h1, h2 {
 
 .galleryPhoto {
     width: 100%;
-}
-
-#story p {
-    font-size: 2rem;
-    text-align: justify;
 }
 
 #storyTitle {
