@@ -32,7 +32,7 @@ footer p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 237, 250);
     z-index: 2;
     cursor: pointer;
 }
@@ -51,7 +51,7 @@ footer p {
 #welcome {
     height: 100%;
     background-color: rgba(255, 255, 255, 0);
-    color: rgb(255, 255, 255);
+    color: rgb(255, 237, 250);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -236,4 +236,17 @@ footer p {
 video {
     width: 100%;
     height: auto;
+}
+
+#musicToggle {
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    border-radius: 3rem;
+    border-color: white;
+    background-color: rgb(255, 237, 250);
+    /* padding: 1rem; */
 }
